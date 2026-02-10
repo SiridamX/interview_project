@@ -26,3 +26,17 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+BackEnd/BackEnd.Api/bin/
+BackEnd/BackEnd.Api/obj/
+
+BackEnd/BackEnd.Application/bin/
+BackEnd/BackEnd.Application/obj/
+
+BackEnd/BackEnd.Domain/bin/
+BackEnd/BackEnd.Domain/obj/
+
+BackEnd/BackEnd.Infrastructure/bin/
+BackEnd/BackEnd.Infrastructure/obj/
+
+BackEnd/BackEnd.Test/
