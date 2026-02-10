@@ -1,0 +1,61 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 24px;
+  width: 700px;
+  border: 2px solid #000;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  label {
+    align-self: center;
+  }
+
+  input, textarea {
+    border: 1px solid #000;
+    padding: 6px;
+  }
+
+  textarea {
+    grid-column: span 2;
+    height: 100px;
+  }
+}
+
+.age {
+  grid-template-columns: 120px auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn-save {
+  background: #0070c0;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+}
+
+.btn-cancel {
+  background: red;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+}

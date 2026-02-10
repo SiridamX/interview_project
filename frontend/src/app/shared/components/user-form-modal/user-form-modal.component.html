@@ -1,0 +1,35 @@
+<div class="overlay" *ngIf="visible">
+  <div class="modal">
+
+    <div class="row">
+      <label>ชื่อ - สกุล</label>
+      <input [(ngModel)]="model.firstName" [disabled]="readonly">
+      <input [(ngModel)]="model.lastName" [disabled]="readonly">
+    </div>
+
+    <div class="row">
+      <label>วันเกิด</label>
+      <input type="date" [(ngModel)]="model.birthOfDate" [disabled]="readonly">
+    </div>
+
+    <div class="row age">
+      <label>อายุ</label>
+      <span>{{ age }} ปี</span>
+    </div>
+
+    <div class="row">
+      <label>ที่อยู่</label>
+      <textarea [(ngModel)]="model.address" [disabled]="readonly"></textarea>
+    </div>
+
+    <div class="actions">
+      <button class="btn-save" *ngIf="mode !== 'view'" (click)="onSave()">
+        บันทึก
+      </button>
+      <button class="btn-cancel" (click)="onClose()">
+        ยกเลิก
+      </button>
+    </div>
+
+  </div>
+</div>

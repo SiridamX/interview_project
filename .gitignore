@@ -39,4 +39,4 @@ BackEnd/BackEnd.Domain/obj/
 BackEnd/BackEnd.Infrastructure/bin/
 BackEnd/BackEnd.Infrastructure/obj/
 
-BackEnd/BackEnd.Test/
+BackEnd/BackEnd.Test/**

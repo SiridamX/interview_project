@@ -1,0 +1,59 @@
+.page {
+  border: 2px solid #000;
+  padding: 16px;
+  background: #fff;
+}
+
+/* Green header */
+.header {
+  background: #0db14b;
+  padding: 8px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ADD button */
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px 0;
+}
+
+.btn-add {
+  background: #4a6fdc;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th {
+  background: #11b5f0;
+  color: #000;
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+.user-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+/* View button */
+.btn-view {
+  background: #4a6fdc;
+  color: #fff;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}

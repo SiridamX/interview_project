@@ -1,0 +1,45 @@
+<div class="page">
+  <div class="header">
+    <h2>IT 01-{{number_mode}}</h2>
+  </div>
+
+  <div class="toolbar">
+    <button class="btn-add" (click)="openAdd()">ADD</button>
+  </div>
+
+  <table class="user-table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>ชื่อ-สกุล</th>
+        <th>ที่อยู่</th>
+        <th>วันเกิด</th>
+        <th>อายุ</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstName }} {{ user.lastName }}</td>
+        <td>{{ user.address }}</td>
+        <td>{{ user.birthOfDate | date:'dd/MM/yyyy' }}</td>
+        <td>{{ user.age }}</td>
+        <td>
+          <button class="btn-view" (click)="openView(user)">
+            View
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-user-form-modal
+  [visible]="showModal"
+  [mode]="mode"
+  [user]="selectedUser"
+  (close)="closeModal()"
+  (save)="saveUser($event)">
+</app-user-form-modal>
